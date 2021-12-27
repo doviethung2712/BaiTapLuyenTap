@@ -62,7 +62,7 @@
     // document.write(daoNguoc(n))
 
     //Bai 6:
-    // function inSoNguyenTo(n) {
+    function inSoNguyenTo(n) {
     //     for (let i = 2; i < n; i++) {
     //         if (n % i == 0) {
     //             return false;
@@ -70,15 +70,15 @@
     //     }
     //     return true;
 
-    // let i = 2 ;
-    // while (i < n){
-    //     if (n % i==0){
-    //         return false;
-    //     }
-    // }
-    // i++;
-    // return true;
-    // }
+    let i = 2 ;
+    while (i < n){
+        if (n % i==0){
+            return false;
+        }
+    i++;
+    }
+    return true;
+    }
 
 
     // for ( i=2;i < n;i++){
@@ -88,26 +88,26 @@
     // }
 
     // // Bai 7:
-    // let i = 2;
-    // while ( i < n ){
-    //     if (inSoNguyenTo(i)){
-    //         document.write(i + ',');
-    //     }
-    // i++
-    // }
+    let i = 2;
+    while ( i < n ){
+        if (inSoNguyenTo(i)){
+            document.write(i + ',');
+        }
+    i++
+    }
 
     // Bai 8:
-        function inSoFibonacci(n){
-            let a = 0;
-            let b = 1;
-            for (let i=0;i<n;i++){
-                let tem  = a + b;
-                 a = b;
-                 b = tem;
-                document.write(a + '<br>')
-            }
-        }
-    inSoFibonacci(n)
+    //     function inSoFibonacci(n){
+    //         let a = 0;
+    //         let b = 1;
+    //         for (let i=0;i<n;i++){
+    //             let tem  = a + b;
+    //              a = b;
+    //              b = tem;
+    //             document.write(a + '<br>')
+    //         }
+    //     }
+    // inSoFibonacci(n)
 
     // Bai 9:
     // function tinhGiaiThua(n){
@@ -120,14 +120,14 @@
     // tinhGiaiThua(n)
 
     // Bai 10:
-    function tinhBieuThuc(n) {
-        let sum = 1;
-        for (let i = 2; i <= n; i++) {
-            sum += 1 / Math.pow(i, 3)
-        }
-        return sum.toFixed(5)
-    }
-    document.write(tinhBieuThuc(n))
+    // function tinhBieuThuc(n) {
+    //     let sum = 1;
+    //     for (let i = 2; i <= n; i++) {
+    //         sum += 1 / Math.pow(i, 3)
+    //     }
+    //     return sum.toFixed(5)
+    // }
+    // document.write(tinhBieuThuc(n))
 
 
 </script>
